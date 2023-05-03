@@ -1,40 +1,36 @@
-
-
 <div class="container content">
-    <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-        	<div class="card">
-        		<div class="card-header">Stupid Coaching</div>
-        		<div class="card-body height3">
-        			<ul class="chat-list">
-        				<li class="in">
-        					<div class="chat-img">
-        						<img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar1.png">
-        					</div>
-        					<div class="chat-body">
-        						<div class="chat-message">
-        							<h5>You</h5>
-        							<p><%= @question %></p>
-        						</div>
-        					</div>
-        				</li>
-        				<li class="out">
-        					<div class="chat-img">
-        						<img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar6.png">
-        					</div>
-        					<div class="chat-body">
-        						<div class="chat-message">
-        							<h5>Coach</h5>
-        							<p><%= @answer %></p>
-        						</div>
-        					</div>
-
-        					</div>
-        				</li>
-        			</ul>
-        		</div>
-        	</div>
-        </div>
-
-
-        <%= link_to 'Ask a new question', ask_path%>
+  <div class="row d-flex justify-content-center">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="card">
+        <div class="card-header">Stupid Coaching</div>
+        <div class="card-body height3">
+          <ul class="chat-list">
+            <li class="in">
+              <div class="chat-img">
+                <img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+              </div>
+              <div class="chat-body">
+                <div class="chat-message">
+                  <h5>You</h5>
+                  <p><%= @question %></p>
+                </div>
+              </div>
+            </li>
+            <li class="out">
+              <div class="chat-img">
+                <img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar6.png">
+              </div>
+              <div class="chat-body">
+                <div class="chat-message">
+                  <h5>Coach</h5>
+                  <p><%= @answer %></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-dark mt-3"><%= link_to 'Ask a new question', ask_path%></button>
+    </div>
+  </div>
+</div>
